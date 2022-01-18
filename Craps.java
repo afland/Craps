@@ -17,5 +17,41 @@ public class Craps {
                 );
             }
         }
+        while (!play.equalsIgnoreCase("n"))
+        {
+            Die role = new Die();
+            System.out.print("(press enter to role) ");
+            in.nextLine();
+            int point = role.roleTwo();
+            if (point == 7 || point == 11) 
+            {
+                System.out.println("Congratulations! You rolled a " + point + " and won on your 1st role");
+            }
+            else if (point == 2 || point == 3 || point == 12)
+            {
+                System.out.println("Oops! You rolled a " + point + " and lost on your 1st role");
+            }
+            else {
+                System.out.println("You rolled a " + point + " as your point");
+                while (true) {
+                    System.out.print("(press enter to role again) ");
+                    in.nextLine();
+                    int currentRole = role.roleTwo();
+                    if (currentRole == 7) {
+                        System.out.println("You rolled a 7 and lost");
+                        break;
+                    }
+                    else if (currentRole == point) {
+                        System.out.println("Congratulations! You rolled a " + currentRole + ", your point");
+                        break;
+                    }
+                    else {
+                        System.out.println("You rolled a " + currentRole);
+                    }
+                }
+            }
+            System.out.print("Would you like to play again? (Y/n) ");
+            play = in.nextLine();
+        }
     }
 }
