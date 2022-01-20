@@ -1,4 +1,14 @@
+/**
+ * The Craps.java runs an interactive main program that allows the user to play Craps
+ *
+ * @author landerera
+ * @version 1-19-2022
+ */
 public class Craps {
+    /**
+     * Plays the interactive game Craps
+     * @param args
+     */
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         System.out.print("Would you like to play a game of craps? (Y/n) ");
@@ -31,7 +41,7 @@ public class Craps {
             {
                 System.out.println("Oops! You rolled a " + point + " and lost on your 1st role");
             }
-            else {
+            else { // if first role didn't immediately end the game (win or lose)
                 System.out.println("You rolled a " + point + " as your point");
                 while (true) {
                     System.out.print("(press enter to role again) ");
