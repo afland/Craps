@@ -4,6 +4,9 @@
  * @author landerera
  * @version 1-19-2022
  */
+
+import java.util.Scanner;
+
 public class Craps {
     /**
      * Plays the interactive game Craps
@@ -65,3 +68,26 @@ public class Craps {
         }
     }
 }
+
+/*
+
+COMMENTS FROM THE INSTRUCTOR:
+
+Wow. Anton. Outstanding work on this. You correctly implemented all the rules of the 
+game, and I was especially happy to see that you included the "default Yes/No" feature
+as described in the handout--it made it SO MUCH EASIER to play the game. You didn't annoy
+with repeated questions about sseeing the rules, and you had good default answers, 
+which encouraged me to keep playing.
+
+Two issues. 1) In Craps.java, you didn't import java.util.Scanner, so the game wouldn't
+even compile at first. Is there something you have in your development environment that
+automatically imports utilities like that for you? 2) When I quit the game, you didn't
+say "goodbye." It's a little thing, but acknowledging that things have concluded is
+important. Next time!
+
+Overall, *very* well done. Thank you!
+
+SCORE: 49/50
+
+*/
+
