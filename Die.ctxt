@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Die
+comment0.text=\n\ Die.java\ serves\ as\ an\ die\ object\ for\ Craps.java\n\n\ @author\ landerera\n\ @version\ 1-19-2022\n
+comment1.params=
+comment1.target=Die()
+comment1.text=\n\ Constructor\ for\ objects\ of\ class\ Die\ \n
+comment2.params=
+comment2.target=int\ roleTwo()
+comment2.text=\n\ roleTwo\ first\ resets\ the\ roll\ to\ 0\ and\ then\ returns\ the\ sum\ of\ two\ 6-sided\ die\ roles\n\ @return\ the\ sum\ of\ 2\ random\ rolls\n
+comment3.params=
+comment3.target=int\ getRole()
+comment3.text=\n\ getRole\ returns\ the\ current\ role\n\ @return\ the\ current\ role\n
+numComments=4
